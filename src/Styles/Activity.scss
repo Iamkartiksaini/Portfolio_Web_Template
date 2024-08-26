@@ -1,0 +1,24 @@
+.Activity {
+    padding: 20px;
+
+    h1 {
+        color: #d2d3d4;
+    }
+
+    img {
+        min-width: 250px;
+        height: auto;
+        object-fit: contain;
+        width: auto;
+        margin: 1rem auto;
+        width: 100%;
+
+        &#live-activity {
+            max-height: 250px;
+        }
+
+        &#contributeImage {
+            max-height: 600px;
+        }
+    }
+}

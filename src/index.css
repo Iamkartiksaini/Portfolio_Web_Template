@@ -1,0 +1,51 @@
+@font-face {
+  font-family: "Poppins";
+  src: url("/Poppins/Poppins-Medium.ttf") format("ttf"),
+    /* Modern Browsers */ url("/Poppins/Poppins-Medium.ttf") format("ttf"); /* Older Browsers */
+  font-weight: normal; /* Adjust font weight if needed */
+  font-style: normal; /* Adjust font style if needed */
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+body {
+  overflow-x: hidden;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  /* font-weight: 500; */
+  /* Variables */
+  --commentColor: #d2d3d4;
+  --primary: #03a9f4;
+  --mainBack: rgb(22, 28, 36);
+  --secondary: #015a83;
+  --AboutListBG: #00000029;
+  --AboutListItemsBG: #00000020;
+
+  --blue-primary: #03a9f4;
+  --green-primary: rgb(0, 171, 85);
+  --orange-primary: rgb(243, 139, 21);
+
+  font-style: normal;
+  background-color: var(--mainBack);
+}
+#MainContainer {
+  --primary: #03a9f4;
+  --secondary: #015a83;
+}
+
+#MainContainer.green {
+  --primary: rgb(0, 171, 85);
+  --secondary: rgb(0, 123, 85);
+}
+#MainContainer.orange {
+  --primary: rgb(243, 139, 21);
+  --secondary: rgb(255, 94, 57);
+}

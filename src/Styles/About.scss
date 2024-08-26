@@ -1,0 +1,142 @@
+.About {
+  color: aliceblue;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 50px 0px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  .centered {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    width: 80%;
+    border-radius: 15px;
+    font-size: 0.8em;
+    padding: 50px 20px;
+    background-color: rgba(0, 0, 0, 0.336);
+    backdrop-filter: blur(5px);
+    transition: 0.5s ease;
+    position: relative;
+    z-index: 1;
+
+    p {
+      color: rgb(219, 219, 219);
+      font-weight: 600;
+      letter-spacing: 0.8px;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+
+      .profileImg {
+        height: 200px;
+        width: 200px;
+        transform: rotateY(180deg);
+        position: relative;
+        border: 3px solid var(--primary);
+        background-image: url(/file1.png);
+        background-position: 52% 37%;
+        background-size: 77%;
+        border-radius: 50%;
+        background-repeat: no-repeat;
+
+        img {
+          height: 100%;
+          width: 100%;
+        }
+      }
+
+      .name {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+        p a {
+          color: inherit;
+        }
+      }
+
+    }
+
+    .bio {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      .area {
+        margin-top: 21px;
+        background-color: var(--AboutListBG);
+        padding: 16px;
+        border-radius: 8px;
+        display: flex;
+        gap: 20px;
+        flex-direction: row;
+        text-align: center;
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
+
+      .skills span,
+      .bhasha,
+      .skills,
+      .education {
+        padding: 10px;
+        margin: 5px;
+        background-color: var(--AboutListBG);
+        border-radius: 4px;
+      }
+
+      .bhasha,
+      .education {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+      }
+
+      .skills {
+        .discription {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+
+          span {
+            padding: 10px;
+            margin: 5px;
+            background-color: var(--AboutListItemsBG);
+            border-radius: 4px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .About {
+    background-size: 50%;
+    background-position: 50% 50%;
+
+    .centered {
+      align-items: center;
+      width: 100%;
+      background: transparent;
+
+      .card .name {
+        align-items: center;
+      }
+    }
+  }
+}
+
+/* @media screen and (max-width: 890px) {
+} */
